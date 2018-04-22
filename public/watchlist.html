@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie WatchList</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Movie Info</a>
+          <a class="navbar-brand" href="watchlist.html">Watch List</a>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+    <div id="userinput" class="row"></div>
+        <h1>Enter a Movie into the WatchList</h1>
+          <input type="text" id="title" placeholder="Movie">
+          <input type="text" id="note" placeholder="Note">
+      <div id="buttons">
+        <div id="actionbutton">
+          <button id="makenew">Submit</button>
+        </div>
+        <button id="clearall">Delete All Notes</button>
+      </div>
+    <div id="results"></div>
+    </div>
+
+
+    <div class="container">
+      <div id="movies" class="row"></div>
+        <h1>Enter a Movie into the WatchList</h1>
+        <form action="/submit" method="post">
+          <input type="text" name="reason" placeholder="bree">
+          <input type="text" name="title" placeholder="title">
+    
+          <input type="submit">
+          <a href="/movies">See your Movies!</a>
+          <a href="/watchlist">See your WatchList!</a>
+          <a href="/populated">See your WatchList, populated with Movies!</a>
+        </form>
+            <div id="movies"></div>
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/app.js"></script>
+  </body>
+</html>

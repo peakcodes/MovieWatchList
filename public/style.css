@@ -1,0 +1,18 @@
+
+#movies img, #movie img{
+    width:100%;
+  }
+  
+  @media(min-width:960px){
+    #movies .col-md-3 .well{
+      height: 390px;
+    }
+  
+    #movies .col-md-3 img{
+      height:240px;
+    }
+  }
+
+  body {
+    background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/movie-theater-background-powerpoint-2.jpg");
+  }
